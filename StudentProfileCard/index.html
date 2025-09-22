@@ -4,73 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Profile Grid</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Herbert's Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Profile page</h1>
+            <button id="theme-toggle" class="hover-button"></button>
+        </header>
 
-    <header>
-        <h1>Student Profiles</h1>
-    </header>
-
-    <main>
-        <section class="card-grid">
-            <article class="profile-card">
-                <figure>
-                    <img src="https://m.media-amazon.com/images/M/MV5BNDY0YWJlYWYtNjAzMC00YmNjLTljNWYtNzkwYmIxYzhjYjNkXkEyXkFqcGc@.jpg"
-                        alt="Student 1 Profile Photo">
-                    <figcaption>Naruto Uzumaki</figcaption>
-                </figure>
-                <div class="card-content">
-                    <p><strong>Course:</strong> Web Development</p>
-                    <p><strong>Fun Fact:</strong> His very slow but strong.</p>
+        <section id="about" class="tab-content active">
+            <div class="profile-header">
+                <img src="image/Me.jpg" class="hover-image profile-pic" alt="Profile Picture">
+                <div class="profile-info">
+                    <h2>Hey I'm <span class="gradient-text">Herbert</span> </h2>
+                    <h3>A <span class="gradient-text">Software Developer</span></h3>
+                    <p>I'm a creative problem solver who loves building things through coding. I enjoy working with Java
+                        and Python, and I’m always exploring new technologies like Ballerina, HTML, JavaScript, and CSS.
+                    </p>
+                    <p>Feel free to explore my profile and get in touch!</p>
                 </div>
-            </article>
-
-            <article class="profile-card">
-                <figure>
-                    <img src="https://pm1.aminoapps.com/6493/8e7caf892a720f98952caf5f589e2c265458a291_hq.jpg"
-                        alt="Student 2 Profile Photo">
-                    <figcaption>Sasuke Uchiha</figcaption>
-                </figure>
-                <div class="card-content">
-                    <p><strong>Course:</strong> UI Design</p>
-                    <p><strong>Fun Fact:</strong> Lost his whole family at the age of 12</p>
+            </div>
+            
+            <div class="lists-container">
+                <div class="lists-cards">
+                    <h4><i class="fas fa-palette"></i> Hobbies</h4>
+                    <ul>
+                        <li><i class="fas fa-gamepad"></i> Gaming</li>
+                        <li><i class="fas fa-code"></i> Coding</li>
+                        <li><i class="fas fa-volleyball-ball"></i> Volleyball</li>
+                        <li><i class="fas fa-book"></i> Reading</li>
+                    </ul>
                 </div>
-            </article>
-
-            <article class="profile-card">
-                <figure>
-                    <img src="https://i.pinimg.com/originals/79/f2/60/79f2601c7886f8f467abe6230137f80c.jpg"
-                        alt="Student 3 Profile Photo">
-                    <figcaption>Sakura Haruno</figcaption>
-                </figure>
-                <div class="card-content">
-                    <p><strong>Course:</strong> Cybersecurity</p>
-                    <p><strong>Fun Fact:</strong> Smart but overrated.</p>
+                <div class="lists-cards">
+                    <h4><i class="fas fa-laptop-code"></i> Skills</h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Problem solving</li>
+                        <li>Web Development</li>
+                    </ul>
                 </div>
-            </article>
-
-            <article class="profile-card">
-                <figure>
-                    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/05/pjimage-106.jpg?q=50&fit=crop&w=825&dpr=1.5"
-                        alt="Student 4 Profile Photo">
-                    <figcaption>Rock Lee</figcaption>
-                </figure>
-                <div class="card-content">
-                    <p><strong>Course:</strong> Data Science</p>
-                    <p><strong>Fun Fact:</strong> His the definition of perseverance</p>
-                </div>
-            </article>
-
+            </div>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2025 HerbertBuilds</p>
-    </footer>
+        <section id="contact" class="tab-content">
+            <div class="contact-card">
+                <h2><span class="gradient-text">Contact Me</span></h2>
+                <div class="contact-links">
+                    <a href="mailto:herbertbuilds@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span class="text">Email:</span>
+                        <span>herbertbuilds@gmail.com</span>
+                    </a>
+                    
+                    <a href="https://github.com/dashboard" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span class="text">GitHub:</span>
+                        <span>HerbertBuilds</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/herbert-jantjies-79267537b/" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="text">LinkedIn:</span>
+                        <span>Herbert Jantjies</span>
+                    </a>
+                    
+                    <a href="tel:+264818271151" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span class="text">Contact:</span>
+                        <span>+264818271151</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
+        <section id="projects" class="tab-content">
+            <div class="projects-card">
+                <h2><span class="gradient-text">Projects</span></h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-folder-open"></i></div>
+                        <div class="project-info">
+                            <h3>Student Profile Card Page</h3>
+                            <p>A responsive student profile card page built with HTML and CSS</p>
+                            <a href="https://github.com/Herbertbuilds/student-profile-card-page" target="_blank"
+                                class="project-link">View on GitHub</a>
+                        </div>
+                    </div>
+                    <!-- Will add more cards in the future-->
+                </div>
+            </div>
+        </section>
+
+        <nav class=" tabs-navigation">
+            <button class="tab-button active" data-tab="about">About</button>
+            <button class="tab-button" data-tab="contact">Contact</button>
+            <button class="tab-button" data-tab="projects">Projects</button>
+        </nav>
+
+        <footer>
+            <p>&copy; Herbert Jantjies Profile</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('theme-toggle');
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            function updateThemeButton() {
+                if (document.body.classList.contains('light-mode')) {
+                    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                } else {
+                    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                }
+            }
+            updateThemeButton();
+            themeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('light-mode');
+                document.body.classList.toggle('dark-mode');
+                updateThemeButton();
+            });
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    button.classList.add('active');
+                    const targetTab = document.getElementById(button.dataset.tab);
+                    if (targetTab) {
+                        targetTab.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
